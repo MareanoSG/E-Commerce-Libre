@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+body{
+    background-color: #000524;
+}
+header{
+    width: 100%;
+    display: block;
+    padding: 18px;
+    height: 120px;
+    background-color: #000524;
+    position: fixed;
+    box-shadow: 0 0 8px #000524;
+}
+#header_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    margin-bottom: 0;
+}
+#header_1, #header_2{
+    
+    height: 50%;
+}
+
+header h2{
+    font-family: 'Rowdies';
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+header img{
+    height: 25px;
+    margin-right: 5px;
+}
+#barra_busqueda{
+    background-color: #101f78;
+    border-radius: 4px;
+    width: 300px;
+    height: 35px;
+    animation: 0.6s anim-barra_busqueda;
+    display: none;
+}
+@keyframes anim-barra_busqueda{
+    0%{
+        width: 10px;
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        width: 300px;
+    }
+}
+
+form #barra_busqueda{
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white;
+}
+form #barra_busqueda::placeholder{
+    color: #ffffff;
+    font-family: 'Wix Madefor Text';
+    font-weight: 500;
+}
+
+#header_2 nav{
+    height: 35px;
+    margin-left: 5px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    
+}
+#header_2 nav a{
+    background-color: #101f78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    height: 100%;
+    margin: 4px;
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+/* CAJA PRINCIPAL */
+
+.caja_principal{
+    
+    width: 100%;
+    padding-top: 120px;
+}
+.destacados{
+    background-color: yellow;
+    margin: auto;
+    width: 90%;
+    height: 100vh;
+    border: 5px solid #1c31a5;
+    display: block;
+}
+.destacados div{
+    display: flex;
+    background-color: green;
+    height: 50%;
+    width: 100%;
+}
+.destacados div article{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    outline: 5px solid #1c31a5;
+    background-image: url('https://thumbs.dreamstime.com/b/sello-del-ejemplo-28420393.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.destacados div article h3{
+    color: white;
+    text-shadow: 0 0 4px black;
+    font-family: 'Wix Madefor Text';
+    font-weight: 800;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.destacados div article h5{
+    color: white;
+    text-shadow: 0 0 4px black;
+    font-family: 'Quicksand';
+    margin-left: 10px;
+}
+
+.categorias{
+    margin-top: 40px;
+}
+.categorias article{
+    width: 90%;
+    height: 75vh;
+    margin: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s ease-in-out background-position, 0.4s ease-in-out width;
+}
+.categorias article:hover{
+    background-position: center;
+    width: 100%;
+    transition: 0.4s;
+}
+#text_categoria{
+    color: white;
+    font-family: 'Wix Madefor Text';
+    font-size: 60px;
+    margin: 30px;
+    margin-bottom: 0;
+    text-align: center;
+}
+#description_categoria{
+    color: white;
+    text-shadow: 0 0 1px black;
+    font-family: 'Exo';
+    font-size: 20px;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueMarket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Wix+Madefor+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <section id="header_1">
+            <h2>BlueMarket</h2>
+        </section>
+        <section id="header_2">
+            <img src="img/search.png" alt="" id="boton_busqueda" onmouseenter="showSearch()">
+            <form action="">
+                <input placeholder="Buscar..." type="search" id="barra_busqueda">
+            </form>
+            <nav>
+                <a href="">Novedades</a>
+                <a href="">Contacto</a>
+            </nav>
+        </section>
+    </header>
+    <div class="caja_principal">
+        <section class="destacados">
+            <div id="destacados_1">
+                <article id="prod_principal_1">
+                    <h3>Producto Recomendado 1</h3>
+                    <h5>$129.999,99</h5>
+                </article>
+                <article id="prod_principal_2">
+                    <h3>Producto Recomendado 2</h3>
+                    <h5>$19.999,99</h5>
+                </article>
+            </div>
+            <div id="destacados_2">
+                <article id="prod_principal_3">
+                    <h3>Producto Recomendado 3</h3>
+                    <h5>$999,99</h5>
+                </article>
+                <article id="prod_principal_4">
+                    <h3>Producto Recomendado 4</h3>
+                    <h5>$699.999,99</h5>
+                </article>
+            </div>
+        </section>
+        <section class="categorias">
+            <h4 id="text_categoria">ALMACÉN</h4>
+            <h4 id="description_categoria">Tus productos de almacén cotidianos</h4>
+            <article id="categoria_1" style="background-image: url('img/almacen.jpg')">
+            </article>
+            <h4 id="text_categoria">TECNOLOGÍA</h4>
+            <h4 id="description_categoria">Cualquier tipo de tecnología para tí</h4>
+            <article id="categoria_2" style="background-image: url('img/tech.jpg')">
+            </article>
+            <h4 id="text_categoria">INMUEBLES</h4>
+            <h4 id="description_categoria">Encuentra la casa de tus sueños</h4>
+            <article id="categoria_3" style="background-image: url('img/casa.jpg')">
+            </article>
+        </section>
+    </div>
+    
+    <script src="js/busqueda.js"></script>
+</body>
+</html>
