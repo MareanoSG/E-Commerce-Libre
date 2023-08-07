@@ -8,3 +8,7 @@ window.addEventListener('scroll', () => {
         caja.style.backgroundColor = '#000524';
     }
 });
+
+function redirigirBusqueda(){
+    document.getElementById('barra_busqueda').focus();
+}
